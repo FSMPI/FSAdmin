@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./mvnw compile
-./mvnw spring-boot:run -Dspring.profiles.active=prod
+./config-service/mvnw compile
+./config-service/mvnw spring-boot:run -Dspring.profiles.active=prod
