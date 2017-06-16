@@ -1,6 +1,7 @@
-FROM openjdk:8-jre
+FROM openjdk:8-jdk
 
 RUN mkdir /var/apps \
+    && apt-get install git \
     && git clone https://github.com/FSMPI/FSAdmin.git -b develop /var/apps
 
 EXPOSE 8888
